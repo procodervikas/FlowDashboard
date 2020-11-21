@@ -3,19 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './account/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './account/admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AuthComponent } from './auth/auth.component';
+import { AuthComponent } from './account/auth/auth.component';
+import { RegisterComponent } from './account/register/register.component';
+import { AccountRoutingModule } from './account/account-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AdminComponent,
-    AuthComponent
+    AuthComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { AuthComponent } from './auth/auth.component';
     NgbModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    AccountRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

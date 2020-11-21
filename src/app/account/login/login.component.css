@@ -1,10 +1,10 @@
 input.ng-invalid{
-    border-left:5px solid red;
+    border:2px solid red;
 }
 
-input.ng-valid{
-    border-left:5px solid green;
-}
+/* input.ng-valid{
+    border:2px solid green;
+} */
 
 .email-error{
     color:red;
@@ -17,7 +17,7 @@ input.ng-valid{
 }
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); 
+background-image: url('src/images/background.jpg'); 
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -54,7 +54,6 @@ color: white;
 
 .social_icon{
 position: absolute;
-right: 20px;
 top: -45px;
 }
 
