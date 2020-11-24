@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './account/auth/auth.component';
 import { RegisterComponent } from './account/register/register.component';
 import { AccountRoutingModule } from './account/account-routing.module';
+// import {MatFormField} from '@angular/material/form-field'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AccountRoutingModule } from './account/account-routing.module';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     AccountRoutingModule,
+    // MatFormField
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,15 +11,16 @@ input.ng-invalid {
     color: red;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Numans');
+
+/* @import url('https://fonts.googleapis.com/css?family=Numans'); */
+
 .white-color {
     color: white;
 }
 
 html,
 body {
-    background-image: url('src/images/background.jpg');
-    /* background-image: rgba(0, 0, 0, 0.45); */
+    background-image: url('/assets/images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;

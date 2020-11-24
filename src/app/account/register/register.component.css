@@ -11,20 +11,6 @@ input.ng-invalid {
     color: white;
 }
 
-html,
-body {
-    background-image: url('src/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    font-family: 'Numans', sans-serif;
-}
-
-.container {
-    height: 100%;
-    align-content: center;
-}
-
 .card {
     height: 370px;
     margin-top: auto;
@@ -33,8 +19,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-
-/* .social_icon span {
+.social_icon span {
     font-size: 60px;
     margin-left: 10px;
     color: #FFC312;
@@ -43,17 +28,16 @@ body {
 .social_icon span:hover {
     color: white;
     cursor: pointer;
-} */
+}
 
 .card-header h3 {
     color: white;
 }
 
-
-/* .social_icon {
+.social_icon {
     position: absolute;
     top: -45px;
-} */
+}
 
 .input-group-prepend span {
     width: 50px;
