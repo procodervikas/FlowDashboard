@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
-        .white-color {
-            color: white;
-        }
-        
         .card {
             height: 500;
             margin-top: auto;
             margin-bottom: auto;
             width: 400px;
             background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .white-color {
+            color: white;
         }
         
         .back_image {
@@ -112,7 +112,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <!-- [formGroup]="form" (ngSubmit)="onSubmit()" -->
+                    <form>
                         <div class="input-group form-group">
                             <!-- <label for="firstName" class="white-color">First Name</label> -->
                             <!-- [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"  -->

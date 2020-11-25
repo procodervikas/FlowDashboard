@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-// import { MatFormField} from '@angular/material/form-field'
 // import { first } from 'rxjs/operators';
 
 // import {AccountService, AlertService} from '../services/accountService';
@@ -23,7 +22,7 @@ export class RegisterComponent implements OnInit {
         this.form = this.formBuilder.group({
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
-            username: ['', Validators.required],
+            email: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]]
         });
     }
@@ -58,16 +57,3 @@ export class RegisterComponent implements OnInit {
     }
 }
 
-// @Component({
-//   selector: 'app-register',
-//   templateUrl: './register.component.html',
-//   styleUrls: ['./register.component.css']
-// })
-// export class RegisterComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-//}
