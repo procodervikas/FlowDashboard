@@ -4,21 +4,26 @@ import { LoginComponent } from './account/login/login.component';
 // import { AdminComponent } from './account/admin/admin.component';
 import { RegisterComponent} from './account/register/register.component'
 // import { AuthComponent} from './account/auth/auth.component';
+import {DashboardComponent} from './account/dashboard/dashboard.component'
 
 const routes: Routes = [
-  // {
-  //   component: LoginComponent,
-  //   path: "login"
-  // },
-  // {
-  //   path: 'register',
-  //   component: RegisterComponent
-  // },
+  {
+    component: LoginComponent,
+    path: "login"
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
   {
     path: '',
     pathMatch: 'full',
     redirectTo: 'login'
   },
+  {
+    component: DashboardComponent,
+    path: "dashboard"
+  }
 ];
 
 @NgModule({

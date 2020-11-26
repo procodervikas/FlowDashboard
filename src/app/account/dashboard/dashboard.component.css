@@ -1,0 +1,22 @@
+html,
+body {
+    background-color: lightblue;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+mat-sidenav,
+mat-sidenav-content {
+    padding: 16px;
+}
+
+mat-sidenav {
+    background-color: green;
+    width: 200px;
+}

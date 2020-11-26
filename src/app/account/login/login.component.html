@@ -13,11 +13,6 @@
                 <a class="navbar-brand" href="#">
                     <h2 style="font-size:1.5rem;" class="white-color"><img src="../../assets/images/Mirrant.jpeg" height="25">MIRRANT</h2>
                 </a>
-                <!-- <a class="navbar-brand justify-content-end" href="#">
-           <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> 
-          <h2 style="font-size:1rem;" class="white-color"><i class="fa fa-user-plus"
-              style="color:rgb(223, 226, 56);"></i> REGISTER</h2>
-        </a> -->
             </nav>
         </div>
         <div class="d-flex justify-content-center h-100" style="padding-top:74px;padding-bottom:139px;">
@@ -27,13 +22,9 @@
                     <h1 class="white-color d-flex justify-content-center" style="font-size:1.75rem;">Sign In</h1>
                     <div class="d-flex justify-content-start social_icon">
                         <span><i class="fa fa-user-circle "></i></span>
-                        <!-- <span><img src="../../assets/images/Mirrant.jpeg" height="50"></span> -->
-                        <!-- <span><i class="fa fa-facebook-square"></i></span>
-                        <span><i class="fa fa-google-plus-square"></i></span>
-                        <span><i class="fa fa-twitter-square"></i></span> -->
                     </div>
                     <div class="card-body">
-                        <form formGroup="loginform" (ngSubmit)="setData(loginform.value)">
+                        <form [formGroup]="loginform" (ngSubmit)="setData(loginform.value)">
                             <div class="input-group form-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fa fa-user"></i></span>
@@ -51,9 +42,8 @@
                                 <input type="checkbox">Remember Me
                             </div>
                             <div class="form-group">
-                                <button value="Login" class="btn float-right login_btn"><a
-                                        routerLink="../dashboard">Login</a></button>
-                                <!-- <input type="submit" value="Login" class="btn float-right login_btn"> -->
+                                <button class="btn float-right login_btn"><a routerLink='../dashboard'>Login</a></button>
+
                             </div>
                         </form>
                     </div>
