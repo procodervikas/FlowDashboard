@@ -1,6 +1,9 @@
 <mat-sidenav-container>
-    <mat-sidenav mode="side" #sidenav [(opened)]="opened">SideNavbar</mat-sidenav>
+    <mat-sidenav mode="side" #sidenav [(opened)]="opened"> <a *ngFor="let item of menuItems" mat-list-item [routerLink]="'/'+item"> {{item | titlecase}} </a></mat-sidenav>
     <mat-sidenav-content>
         <button mat-raised-button color="primary" (click)="sidenav.toggle()">toggle</button>
     </mat-sidenav-content>
 </mat-sidenav-container>
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.column" [rowspan]="tile.rows" [style.background]="tile.color"></mat-grid-tile>
+</mat-grid-list>
