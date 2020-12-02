@@ -1,11 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  // text: string;
-}
+import { Component } from '@angular/core';
+import { map } from 'rxjs/operators';
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,14 +8,29 @@ export interface Tile {
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-    opened = false;
+  /** Based on the screen size, switch from standard to one column per row */
+  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return [
+          { title: 'Card 1', cols: 1, rows: 1 },
+          { title: 'Card 2', cols: 1, rows: 1 },
+          { title: 'Card 3', cols: 1, rows: 1 },
+          { title: 'Card 4', cols: 1, rows: 1 }
+        ];
+      }
 
-    menuItems = ['dashboard', 'sales', 'orders', 'customers', 'products']
+      return [
+        { title: 'Card 1', cols: 1, rows: 1 },
+        { title: 'Card 2', cols: 1, rows: 1 },
+        { title: 'Card 3', cols: 1, rows: 1 },
+        { title: 'Card 4', cols: 1, rows: 1 }
+      ];
+    })
+  );
 
-    tiles: Tile[] = [
-      {cols: 3, rows: 1, color: 'lightblue'},
-      {cols: 1, rows: 2, color: 'lightgreen'},
-      {cols: 1, rows: 1, color: 'lightpink'},
-      {cols: 2, rows: 1, color: '#DDBDF1'},
-    ];
+  lat = 22.2736308;
+  long = 70.7512555;
+
+  constructor(private breakpointObserver: BreakpointObserver) { }
 }

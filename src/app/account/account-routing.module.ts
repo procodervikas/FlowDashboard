@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component'
-import {DashboardComponent} from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component'
+import { NavigationComponent } from './navigation/navigation.component'
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
     path: "login"
   },
   {
-    component:RegisterComponent,
+    component: RegisterComponent,
     path: "register"
   },
   {
@@ -22,11 +23,15 @@ const routes: Routes = [
   {
     component: DashboardComponent,
     path: "dashboard"
+  },
+  {
+    path: "nav",
+    component: NavigationComponent
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule,CommonModule]
 })
 export class AccountRoutingModule { }

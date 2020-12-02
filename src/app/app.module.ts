@@ -16,11 +16,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { NavigationComponent } from './account/navigation/navigation.component';
 // import { MatAutocompleteModule } from '@angular/material/autocomplete';
 // import { MatBadgeModule } from '@angular/material/badge';
 // import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -33,7 +35,7 @@ import { MatListModule } from '@angular/material/list';
 // import { MatDialogModule } from '@angular/material/dialog';
 // import { MatDividerModule } from '@angular/material/divider';
 // import { MatExpansionModule } from '@angular/material/expansion';
- 
+
 // import { MatIconModule } from '@angular/material/icon';
 // import { MatInputModule } from '@angular/material/input';
 // import { MatListModule } from '@angular/material/list';
@@ -65,7 +67,7 @@ import { MatListModule } from '@angular/material/list';
     AuthComponent,
     RegisterComponent,
     DashboardComponent,
-    NavComponent
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +83,13 @@ import { MatListModule } from '@angular/material/list';
     LayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatMenuModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'GOOGLE API KEY',
+    //   libraries: ['places']
+    // })
     //  OverlayModule,
     //   MatTreeModule, 
     //   MatTooltipModule, 

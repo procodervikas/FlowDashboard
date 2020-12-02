@@ -1,22 +1,25 @@
-html,
-body {
-    background-color: lightblue;
+.grid-container {
+    margin: 20px;
 }
 
-mat-sidenav-container {
-    height: 100%;
+.bg-color {
+    background-color: #444345;
 }
 
-*:focus {
-    outline: none;
+.dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
 }
 
-mat-sidenav,
-mat-sidenav-content {
-    padding: 16px;
+.more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
-mat-sidenav {
-    background-color: green;
-    width: 200px;
+.dashboard-card-content {
+    text-align: center;
 }
