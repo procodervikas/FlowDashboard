@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flowDashboard';
+  // lat = 28.704060;
+  // long = 77.102493;
+  // googleMapType = 'satellite';
 }

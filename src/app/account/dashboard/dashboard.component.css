@@ -6,6 +6,10 @@
     background-color: #444345;
 }
 
+.white-color {
+    color: white;
+}
+
 .dashboard-card {
     position: absolute;
     top: 15px;

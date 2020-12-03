@@ -17,12 +17,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
+// import { AgmCoreModule } from '@agm/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavigationComponent } from './account/navigation/navigation.component';
+import {FlexLayoutModule} from '@angular/flex-layout'
 // import { MatAutocompleteModule } from '@angular/material/autocomplete';
 // import { MatBadgeModule } from '@angular/material/badge';
 // import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -67,7 +69,7 @@ import { NavigationComponent } from './account/navigation/navigation.component';
     AuthComponent,
     RegisterComponent,
     DashboardComponent,
-    NavigationComponent
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,9 +88,9 @@ import { NavigationComponent } from './account/navigation/navigation.component';
     MatListModule,
     MatCardModule,
     MatMenuModule,
+    FlexLayoutModule,
     // AgmCoreModule.forRoot({
-    //   apiKey: 'GOOGLE API KEY',
-    //   libraries: ['places']
+    //   apiKey: 'AIzaSyAQiRgaBJy5557qN5stKN0LA7uS8CIsMmY'
     // })
     //  OverlayModule,
     //   MatTreeModule, 
