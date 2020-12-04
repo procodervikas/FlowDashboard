@@ -26,6 +26,7 @@
     "@angular/router": "~10.1.6",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@google/maps": "^1.1.3",
     "@ng-bootstrap/ng-bootstrap": "^8.0.0",
     "angular-material": "^1.2.1",
     "bootstrap": "^4.5.3",

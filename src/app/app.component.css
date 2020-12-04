@@ -1,3 +1,7 @@
 .bg-color {
     background-color: #444345;
 }
+
+agm-map {
+    height: 300px;
+}

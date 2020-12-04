@@ -12,12 +12,12 @@ import { RegisterComponent } from './account/register/register.component';
 import { AccountRoutingModule } from './account/account-routing.module';
 import { DashboardComponent } from './account/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
 // start of material libraries
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
-// import { AgmCoreModule } from '@agm/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -89,9 +89,10 @@ import {FlexLayoutModule} from '@angular/flex-layout'
     MatCardModule,
     MatMenuModule,
     FlexLayoutModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyAQiRgaBJy5557qN5stKN0LA7uS8CIsMmY'
-    // })
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBafeh1wHUGbXiWRFOCpJm0MC3D6OUmHv4',
+      libraries: ['places']
+    }),
     //  OverlayModule,
     //   MatTreeModule, 
     //   MatTooltipModule, 

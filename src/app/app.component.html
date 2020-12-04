@@ -3,14 +3,15 @@
 </div> -->
 <div class="bg-color">
     <app-navigation></app-navigation>
-    <!-- <agm-map [latitude]='lat' [longitude]='long'>
-
-        <agm-marker [latitude]="lat" [longitude]="long">
-        </agm-marker>
-
-    </agm-map> -->
 </div>
 
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+</agm-map>
+
+<h5>Address: {{address}}</h5>
+<div>Latitude: {{latitude}}</div>
+<div>Longitude: {{longitude}}</div>
 
 <!-- <agm-map [latitude]='lat' [longitude]='long' [mapTypeId]='googleMapType'>
 </agm-map> -->
