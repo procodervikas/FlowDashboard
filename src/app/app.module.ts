@@ -12,7 +12,7 @@ import { RegisterComponent } from './account/register/register.component';
 import { AccountRoutingModule } from './account/account-routing.module';
 import { DashboardComponent } from './account/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 // start of material libraries
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -24,7 +24,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavigationComponent } from './account/navigation/navigation.component';
-import {FlexLayoutModule} from '@angular/flex-layout'
+import { FlexLayoutModule } from '@angular/flex-layout';
 // import { MatAutocompleteModule } from '@angular/material/autocomplete';
 // import { MatBadgeModule } from '@angular/material/badge';
 // import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -89,10 +89,10 @@ import {FlexLayoutModule} from '@angular/flex-layout'
     MatCardModule,
     MatMenuModule,
     FlexLayoutModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBafeh1wHUGbXiWRFOCpJm0MC3D6OUmHv4',
-      libraries: ['places']
-    }),
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyDUe9KNqDJIMKNJLR06QCNfo3Y4T_Xwqlw',
+    //   libraries: ['places']
+    // }),
     //  OverlayModule,
     //   MatTreeModule, 
     //   MatTooltipModule, 
