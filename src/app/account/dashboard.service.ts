@@ -13,10 +13,10 @@ export class DashboardService {
     return this.http.get(this.url+"mobileList");
   }
 
-  getMobileBrandList(){
-    console.log('data is secure show');
-    return this.http.get(this.url+"chartData");
-  }
+  // getMobileBrandList(){
+  //   console.log('data is secure show');
+  //   return this.http.get(this.url+"chartData");
+  // }
 
   saveMobileList(data){
     console.log(data);
